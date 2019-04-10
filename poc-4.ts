@@ -5,8 +5,8 @@ console.log("POC 04 - BehaviorSubject");
 const observer = new BehaviorSubject(0);
 
 // observer.next(1);
-// observer.next(2); 
-// observer.next(3);
+observer.next(2);
+observer.next(3);
 
 setTimeout(function() {
     observer.next(4);
@@ -20,3 +20,5 @@ observer.subscribe(data => console.log('data01: ', data));
 observer.subscribe(data => console.log('data02: ', data));
 
 observer.next(6);
+
+observer.subscribe(data => console.log('data0: ', data));

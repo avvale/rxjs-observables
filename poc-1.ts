@@ -2,7 +2,7 @@ import { Observable } from 'rxjs';
 
 // registra streaming y envío todos los datos que contiene al callback
 console.log("POC 01 - Observable");
-const obs = new Observable(function(subscriber) {
+const obs = new Observable((subscriber) => {
     subscriber.next(1);
     subscriber.next(2);
     subscriber.next(3);
